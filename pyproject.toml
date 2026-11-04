@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kubectl-sizer"
+version = "0.2.0"
+description = "SRE Kubernetes Pod Resource Analyzer, HikariCP Pool Sizer, Multi-Cloud FinOps Estimator (AWS/Azure/GCP), and PSS-Restricted Manifest Generator."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Kunj Prajapati", email = "ku41208@gmail.com" }
+]
+keywords = ["kubernetes", "sre", "finops", "capacity-planning", "hikaricp", "aks", "eks", "gke"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: System Administrators",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: System :: Systems Administration",
+]
+
+[project.urls]
+Homepage = "https://kunj.site"
+Repository = "https://github.com/kunj1223/kubectl-sizer"
+
+[project.scripts]
+kubectl-sizer = "kubectl_sizer.cli:main"
+
